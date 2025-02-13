@@ -11,6 +11,7 @@ import {
 
 // logo from www.svgl.app
 import type { SVGProps } from "react";
+import { GeneralSubmitButton } from "../SubmitButton";
 const Github = (props: SVGProps<SVGSVGElement>) => (
   <svg
     viewBox="0 0 256 250"
@@ -76,10 +77,15 @@ export function LoginForm() {
                 });
               }}
             >
-              <Button className=" w-full" variant="outline">
+              {/* <Button className=" w-full" variant="outline">
                 <Github className="size-4 text-black dark:text-white" />
                 Login with Github
-              </Button>
+              </Button> */}
+              <GeneralSubmitButton
+                variant="outline"
+                text="Login with Github"
+                width="w-full"
+              />
             </form>
             <form action="">
               <Button className="w-full" variant="outline">
